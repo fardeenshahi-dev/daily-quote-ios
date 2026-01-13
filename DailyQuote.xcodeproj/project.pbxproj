@@ -6,8 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		44801E0A2F15757600C82FAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44801E022F1572C500C82FAF /* HomeView.swift */; };
+		44801E0B2F15758800C82FAF /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44801E032F1572FB00C82FAF /* FavoritesView.swift */; };
+		448170CD2F15781F00DB0031 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170CC2F15781F00DB0031 /* QuoteViewModel.swift */; };
+		448170CF2F1578B000DB0031 /* QuoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170CE2F1578B000DB0031 /* QuoteCardView.swift */; };
+		448170D12F157AF000DB0031 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170D02F157AF000DB0031 /* Quote.swift */; };
+		448170D32F157B2000DB0031 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170D22F157B2000DB0031 /* QuoteService.swift */; };
+		448170D52F157E9100DB0031 /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170D42F157E9100DB0031 /* FavoritesStore.swift */; };
+		448170D72F15852700DB0031 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170D62F15852700DB0031 /* ShareSheet.swift */; };
+		448170D92F1586BD00DB0031 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448170D82F1586BD00DB0031 /* EmptyStateView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		44801DEF2F1570AD00C82FAF /* DailyQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44801E022F1572C500C82FAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		44801E032F1572FB00C82FAF /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		448170CC2F15781F00DB0031 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		448170CE2F1578B000DB0031 /* QuoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCardView.swift; sourceTree = "<group>"; };
+		448170D02F157AF000DB0031 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		448170D22F157B2000DB0031 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		448170D42F157E9100DB0031 /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		448170D62F15852700DB0031 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		448170D82F1586BD00DB0031 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +53,10 @@
 		44801DE62F1570AD00C82FAF = {
 			isa = PBXGroup;
 			children = (
+				44801E002F1570F800C82FAF /* Services */,
+				44801DFF2F1570E500C82FAF /* Views */,
+				44801DFE2F1570D300C82FAF /* ViewModels */,
+				44801DFD2F1570C100C82FAF /* Models */,
 				44801DF12F1570AD00C82FAF /* DailyQuote */,
 				44801DF02F1570AD00C82FAF /* Products */,
 			);
@@ -43,6 +68,43 @@
 				44801DEF2F1570AD00C82FAF /* DailyQuote.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		44801DFD2F1570C100C82FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				448170D02F157AF000DB0031 /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44801DFE2F1570D300C82FAF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				448170CC2F15781F00DB0031 /* QuoteViewModel.swift */,
+				448170D42F157E9100DB0031 /* FavoritesStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		44801DFF2F1570E500C82FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44801E022F1572C500C82FAF /* HomeView.swift */,
+				44801E032F1572FB00C82FAF /* FavoritesView.swift */,
+				448170CE2F1578B000DB0031 /* QuoteCardView.swift */,
+				448170D82F1586BD00DB0031 /* EmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44801E002F1570F800C82FAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				448170D22F157B2000DB0031 /* QuoteService.swift */,
+				448170D62F15852700DB0031 /* ShareSheet.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +181,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448170D52F157E9100DB0031 /* FavoritesStore.swift in Sources */,
+				448170D72F15852700DB0031 /* ShareSheet.swift in Sources */,
+				44801E0B2F15758800C82FAF /* FavoritesView.swift in Sources */,
+				448170CF2F1578B000DB0031 /* QuoteCardView.swift in Sources */,
+				448170CD2F15781F00DB0031 /* QuoteViewModel.swift in Sources */,
+				448170D32F157B2000DB0031 /* QuoteService.swift in Sources */,
+				448170D12F157AF000DB0031 /* Quote.swift in Sources */,
+				44801E0A2F15757600C82FAF /* HomeView.swift in Sources */,
+				448170D92F1586BD00DB0031 /* EmptyStateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

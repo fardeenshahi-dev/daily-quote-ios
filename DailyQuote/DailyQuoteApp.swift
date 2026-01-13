@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct DailyQuoteApp: App {
+
+    @StateObject private var favoritesStore = FavoritesStore()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(favoritesStore)
         }
     }
 }
